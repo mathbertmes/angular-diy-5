@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-increment',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './increment.component.css'
 })
 export class IncrementComponent {
+  @Output() increment= new EventEmitter();
 
+    
+    ngOnInit(): void {}
 }
