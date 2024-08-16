@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-decrement',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './decrement.component.css'
 })
 export class DecrementComponent {
-
+  @Output() decrement= new EventEmitter();
 }
